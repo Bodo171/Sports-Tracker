@@ -86,7 +86,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\OtherProgrammingStuff\SQLite\sqlite3.c" />
     <ClCompile Include="sportrepository.cpp" />
     <ClCompile Include="sportwindow.cpp" />
     <QtRcc Include="SportManager.qrc" />
