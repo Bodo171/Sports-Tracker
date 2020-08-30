@@ -27,9 +27,6 @@
     <ClCompile Include="sportwindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\OtherProgrammingStuff\SQLite\sqlite3.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="SportManager.h" />

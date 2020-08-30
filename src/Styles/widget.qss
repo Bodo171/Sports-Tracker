@@ -1,0 +1,33 @@
+QWidget {
+   background-color: white; 
+   border-color: blue;
+}
+QPushButton {
+    background-color: rgb(245,245,245);
+    border-radius: 5px;
+    border-style: outset; 
+    border-color: grey; 
+    border-width: 2px; 
+    padding : 6px;
+}
+QPushButton:pressed {
+    background-color: white;
+    border-style: inset;
+}
+QPushButton:hover:!pressed {
+    background-color: rgb(250,250,250);
+}
+QListWidget {
+    background-color: rgb(245,245,245);
+    border-radius: 5px;
+    border-style: outset; 
+    border-color: grey; 
+    border-width: 2px; 
+}
+QLineEdit {
+    background-color: rgb(245,245,245);
+    border-radius: 5px;
+    border-style: outset; 
+    border-color: grey; 
+    border-width: 2px; 
+}
