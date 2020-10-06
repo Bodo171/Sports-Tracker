@@ -1,3 +1,6 @@
+src/.vs/
 .vs/
 src/packages/sqlite3_c_plus_plus.1.0.3/
 src/x64/
+src/x64/Debug/Sport Manager.tlog/Sport Manager.write.1u.tlog
+*.tlog

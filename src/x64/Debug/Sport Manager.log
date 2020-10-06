@@ -8,9 +8,9 @@
   sport.cpp
   SportManager.cpp
   main.cpp
-  qrc_SportManager.cpp
   moc_SportManager.cpp
   moc_sportwindow.cpp
+  qrc_SportManager.cpp
 repository.obj : error LNK2019: unresolved external symbol sqlite3_close referenced in function "public: __cdecl Repository::~Repository(void)" (??1Repository@@QEAA@XZ)
 repository.obj : error LNK2019: unresolved external symbol sqlite3_exec referenced in function "public: __cdecl Repository::Repository(void)" (??0Repository@@QEAA@XZ)
 repository.obj : error LNK2019: unresolved external symbol sqlite3_free referenced in function "public: void __cdecl Repository::addEvent(class Event)" (?addEvent@Repository@@QEAAXVEvent@@@Z)

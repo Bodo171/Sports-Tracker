@@ -20,6 +20,7 @@ Repository::Repository() {
 	}
 }
 
+//C-style API for sqlite
 void Repository::getEventFromDatabase(int numberOfArguments, char** argumentValues, char** argumentNames) {
 	string name, description, sport;
 	Date date;
@@ -106,31 +107,3 @@ vector<Event> Repository::getAllEventsFromSport(string sport) {
 Repository::~Repository() {
 	sqlite3_close(database);
 }
-/*
-void Repository::addEvent(Event toAdd) {
-	events.push_back(toAdd);
-
-}
-
-void Repository::removeEvent(Event toRemove) {
-	events.erase(remove_if(events.begin(), events.end(),
-		[toRemove](Event toCheck) {return toRemove == toCheck; }),
-		events.end());
-}
-
-
-bool Repository::isInRepository(Event toCheck) {
-	for (auto Event : events)
-		if (Event == toCheck)
-			return true;
-	return false;
-}
-
-vector<Event> Repository::getAllEventsFromSport(string sport) {
-	vector<Event> toReturn(events.size());
-	auto newEnd = copy_if(events.begin(), events.end(), toReturn.begin(),
-		[sport](Event toCheck) {return toCheck.getSport() == sport; });
-	toReturn.resize(newEnd - toReturn.begin());
-	return toReturn;
-}
-*/
