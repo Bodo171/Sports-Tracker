@@ -12,8 +12,13 @@ int getElementCallback(void* data, int argc, char** argv, char** azColName) {
 Repository::Repository() {
 	sqlite3_open(databaseName.c_str(), &database);
 	char* errorMessage=0;
-
-	string command = "CREATE TABLE IF NOT EXISTS " + tableName + " " + " ( " + nameColumn + " TEXT, " + sportColumn + " TEXT, " + dateColumn + " TEXT, " + descriptionColumn+ " TEXT );";
+	string primaryKey = "PRIMARY KEY ( "+nameColumn+","+dateColumn+")";
+	string command = "CREATE TABLE IF NOT EXISTS " + tableName + " " + " ( " 
+		  + nameColumn + " TEXT NOT NULL, " \
+		  + sportColumn + " TEXT, " \
+		  + dateColumn + " TEXT NOT NULL, "\
+		  + descriptionColumn+ " TEXT, "\
+		  + primaryKey + ");";
 	int exitCode=sqlite3_exec(database, command.c_str(), emptyCallback, 0, &errorMessage);
 	if (exitCode != SQLITE_OK) {
 		throw Error("Please restart");
